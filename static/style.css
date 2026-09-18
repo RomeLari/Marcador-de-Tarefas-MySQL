@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(#ffbbc9, #ffe3a8);
+}
+
+.todo-container {
+    width: 370px;
+    max-width: 90%;
+    min-height: 500px;
+    padding: 32px;
+    border-radius: 23px;
+    background-color: #f1a5a2;
+    border-color: rgb(255, 241, 223);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container h1 {
+    color: #ffcad5;
+    font-size: 36px;
+}
+
+.todo-container .listas .adicionar {
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.todo-container .listas .adicionar::placeholder {
+    color:#be97a4;
+}
+
+.todo-container .listas .botão {
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    color:#ffe9e9;
+    background-color:#ffcad5;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.todo-container .tarefa-adicionada {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #ffd1f9;
+    min-height: 70px;
+    max-width: 300px;
+    border-radius: 7px;
+}
+
+.tarefa-adicionada {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ffd1f9;
+    border-radius: 7px;
+}
+
+
+.tarefa-adicionada .actions .check {
+    color:#3dbd31;
+    background-color:#95ff80;
+    border-radius: 4px;
+    border: none;
+}
+
+.tarefa-adicionada .actions .check:hover{
+    cursor: pointer;
+}
+
+.tarefa-adicionada .actions .cancelar {
+    color:#bd3131;
+    background-color:#ff8080;
+    border-radius: 4px;
+    border: none;
+}
+
+.tarefa-adicionada .actions .cancelar:hover {
+    cursor: pointer;
+}
+
+.todo-container .tarefa-adicionada .actions {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.todo-container .tarefa-adicionada .actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
